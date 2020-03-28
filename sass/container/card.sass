@@ -1,0 +1,20 @@
+.card
+  position: relative
+  padding: 4em 5em 4em 5em
+  border-top: solid 2px lightgrey
+  border-bottom: solid 2px lightgrey
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: -10px
+    width: 2px
+    height: -webkit-calc(100% + 20px)
+    height: calc(100% + 20px)
+    background-color: lightgrey
+
+  &:before
+    left: 10px
+
+  &:after
+    right: 10px

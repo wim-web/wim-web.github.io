@@ -1,11 +1,22 @@
+body
+  color: $textColor
+
 ul
   list-style: none
 
 a
   text-decoration: none
+  &:link, &:visited, &:active
+    color: $textColor
+  &:hover
+    color: lightgrey
+    transition: .5s
+
+.text-center
+  text-align: center
 
 
-@for $i from 1 to 4
+@for $i from 1 to 9
   .mt-#{$i * 5}
     margin-top: #{$i * 5}px
   .ml-#{$i * 5}
